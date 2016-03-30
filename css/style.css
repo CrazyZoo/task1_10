@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 20px;
+}
+@media screen and (max-width: 640px) {
+  #flex-container {
+    flex-wrap: wrap;
+  }
+}
+#flex-container {
+  display: flex;
+}
+.flex-item {
+  width: 150px;
+  box-sizing: border;
+  border: 1px solid #f00;
+}
+.item1 {
+  height: 120px;
+}
+.item2 {
+  height: 100px;
+}
+.item3 {
+  height: 40px;
+}
+.item4 {
+  height: 200px;
+  border-color: #0f0;
+}
