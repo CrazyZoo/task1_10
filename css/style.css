@@ -1,18 +1,17 @@
 * {
   margin: 0;
-  padding: 20px;
-}
-@media screen and (max-width: 640px) {
-  #flex-container {
-    flex-wrap: wrap;
-  }
 }
 #flex-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 .flex-item {
+  flex: none;
   width: 150px;
-  box-sizing: border;
+  padding: 20px;
+  box-sizing: border-box;
   border: 1px solid #f00;
 }
 .item1 {
@@ -27,4 +26,14 @@
 .item4 {
   height: 200px;
   border-color: #0f0;
+}
+@media screen and (max-width: 640px) {
+  #flex-container {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .item4 {
+    order: -1;
+    margin-bottom: 20px;
+  }
 }
